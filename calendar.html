@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal - UIN SGD Event Calendar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="asset/logo.png" alt="Logo">
+      <h1>Event Calendar UIN SGD</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="calendar.html">Jadwal</a></li>
+      <li><a href="login.html">Admin</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Jadwal Event</h1>
+    <div id="calendar"></div>
+    <div id="eventDetails" class="hidden">
+      <h2 id="eventTitle"></h2>
+      <p id="eventDescription"></p>
+      <p id="eventDate"></p>
+      <img id="eventImage" src="" alt="" style="max-width: 100%;">
+      <p>CP: <span id="eventContactPerson"></span></p>
+    </div>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

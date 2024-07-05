@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - UIN SGD Event Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="asset/logo.png" alt="Logo">
+      <h1>Event Calendar UIN SGD</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="calendar.html">Jadwal</a></li>
+      <li><a href="login.html">Admin</a></li>
+      <li><a href="event-list.html">Daftar Event</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Tambah Event</h1>
+    <form id="eventForm">
+      <label for="name">Nama Acara:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="description">Deskripsi:</label>
+      <textarea id="description" name="description" required></textarea>
+      <label for="date">Tanggal:</label>
+      <input type="date" id="date" name="date" required>
+      <label for="endDate">Tanggal Selesai:</label>
+      <input type="date" id="endDate" name="endDate" required>
+      <label for="imageInput">Gambar:</label>
+      <input type="file" id="imageInput" name="imageInput" accept="image/*">
+      <label for="contactPerson">Kontak Person:</label>
+      <input type="text" id="contactPerson" name="contactPerson" required>
+      <button type="submit">Tambah Acara</button>
+    </form>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
